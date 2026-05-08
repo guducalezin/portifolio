@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Estilo/estilo2.css" />
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="centro">
+        <h1 class="titulo">
+          Formulário de Cadastro
+        </h1>
+        <table>
+          <tr>
+            <td>
+              <label>Seu nome: </label>
+            </td>
+            <td>
+              <input class="input" type="text" placeholder="Digite seu nome Completo" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Possui alguma restrição alimentar:</label></td>
+            <td><input class="input" type="textarea" placeholder="Escreva aqui..." /></td>
+          </tr>
+          <tr>
+            <td><label>Selecione o Curso:</label></td>
+            <td>
+              <select class="select" name="Curso">
+                <option value="">-- Selecione --</option>
+                <option value="Agro">Agropecuária</option>
+                <option value="Agri">Agrimensura</option>
+                <option value="Nutri">Nutrição</option>
+                <option value="Inf">Informática</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Selecione a Turma: </label></td>
+            <td>
+              <select class="select" name="Turma">
+                <option value="">-- Selecione --</option>
+                <option value="1a">1A</option>
+                <option value="1b">1B</option>
+                <option value="2a">2A</option>
+                <option value="2b">2B</option>
+                <option value="3a">3A</option>
+                <option value="3b">3B</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>E-mail: </label></td>
+            <td><input class="input" type="text" placeholder="Fulano@ifmg.edu.br" /></td>
+          </tr>
+          <tr>
+            <td><label>Senha: </label></td>
+            <td><input class="input" type="password" placeholder="**********" /></td>
+          </tr>
+          <tr>
+            <td><label>Confirmar senha: </label></td>
+            <td><input class="input" type="password" placeholder="**********" /></td>
+          </tr>
+          <tr>
+            <td> <label>Perfil:</label></td>
+            <td>
+              <input class="radio" type="radio" name="Perfil" /> Professor
+              <input class="radio" type="radio" name="Perfil" /> Aluno
+            </td>
+            <td>
+              <button class="botao"
+                type="submit"
+                
+              >
+                Enviar
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

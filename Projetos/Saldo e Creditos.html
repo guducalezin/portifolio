@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saldo e Creditos</title>
+    <link rel="stylesheet" href="Estilo/estilo2.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="centro">
+        <h2 class="color: white; background-color: green;">Saldo e Créditos</h2>
+        <table>
+          <tr>
+            <td>
+              <label style="background-color: rgb(212, 212, 212)">
+                Usuário:
+              </label>
+            </td>
+            <td>
+              <label style="background-color: rgb(212, 212, 212)"
+                >"Nome do usuário"</label
+              >
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <label style="background-color: rgb(212, 212, 212)"
+                >Perfil:</label
+              >
+            </td>
+            <td>
+              <label style="background-color: rgb(212, 212, 212)"
+                >"Aluno"</label
+              >
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <h3
+                style="color: white; background-color: green; border-radius: 5%"
+              >
+                Créditos Disponiveis
+              </h3>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <h3 style="color: white; background-color: green">R$</h3>
+            </td>
+            <td>
+              <h3 id="dinheiro" style="color: white; background-color: green">
+                45.00
+              </h3>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><label>Comprar Créditos:</label></td>
+          </tr>
+          <tr>
+            <td><label>Quantidade (R$):</label></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <input
+                id="compra"
+                type="number"
+                class="input"
+                placeholder="Ex:20.00"
+              />
+            </td>
+            <td>
+              <button onclick="atualizar()" class="botao">Comprar</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      function atualizar() {
+        let comprando = document.getElementById("compra").value;
+        let saldo = document.getElementById("dinheiro").textContent;
+        let somado = Number(comprando) + Number(saldo);
+        document.getElementById("dinheiro").innerText = somado;
+      }
+    </script>
+  </body>
+</html>
