@@ -1,3 +1,4 @@
+
 .custom-bg {
   min-height: 100vh;
   background: radial-gradient(
@@ -12,13 +13,14 @@
     ),
     #000;
 }
+/* Esse object-fit eu peguei do chat pq a foto tava cortando */
 .foto-perfil {
   width: 160px;
   height: 160px;
   object-fit: cover;
   border: 3px solid #fff;
 }
-
+/* O glass o chat q me deu ideia de fazer, mas entendi como funciona*/
 .glass {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
